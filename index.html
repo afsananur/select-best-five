@@ -14,14 +14,14 @@
     
 
 </head>
-<body>
+<body class="bg-neutral-900	">
    <header class=" banner  ">
        <div class="text-white grid grid-cols-3 ">
         <div class="">
             <img src="images/Group 12.png" alt="">
         </div>
        <div class="mt-5 text-center py-8 ">
-        <h1 class="text-7xl mt-5 font-bold pt-5">World Cup 2026</h1>
+        <h1 class="md:text-6xl sm:text-3xl mt-5 font-bold pt-5">World Cup 2026</h1>
         <p class="pt-7">The FIFA World Cup, often simply called the World Cup, is an international association football competition between the senior men's national teams of the members of the Fédération Internationale de Football Association (FIFA).</p>
        </div>
        <div class="">
@@ -34,18 +34,159 @@
 
 
    <main>
-         <div class="grid grid-cols-4  ">
-           
-            <div>
+        <section>
+            <div class="p-8 grid lg:grid-cols-4 md:grid-cols-2 gap-3 grid justify-items-center text-center text-white">
+               <div class="grid grid-row-3 gap-3">
+               <div class="card card-compact w-full bg-slate-800	 shadow-xl text-white text-center">
+                        <figure><img class="w-full" src="images/Rectangle 144 (6).png" alt="Lionel Messy" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-medium"> Lionel Messy</h2>
+                            <p>Goals 36 . Assist 120</p>
+                            <div class="card-actions justify-center">
+                                <button id="btn-messi" class="bg-blue-600 px-12 py-2 rounded font-medium text-lg"
+                                    onclick="getSelectButton(this)">Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
+
+                <div class="card  w-full bg-slate-800	 shadow-xl text-white text-center">
+                        <figure><img class="w-full" src="images/Rectangle 144 (1).png" alt="Naymar" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-medium">Naymar</h2>
+                            <p>Goals 36 . Assist 120</p>
+                            <div class="card-actions justify-center">
+                                <button id="btn-naymar" class="bg-blue-600 px-12 py-2 rounded font-medium text-lg"
+                                    onclick="getSelectButton(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                   </div>
+        
+    
+
+               <div class="grid grid-row-3 gap-3">
+                
+           
+                    <div class="card card-compact w-full bg-slate-800	 shadow-xl text-white text-center">
+                        <figure><img class="w-full" src="images/Rectangle 144 (2).png" alt="mbappe" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-medium"> Mbappe</h2>
+                            <p>Goals 36 . Assist 120</p>
+                            <div class="card-actions justify-center">
+                                <button id="btn-mbappe" class="bg-blue-600 px-12 py-2 rounded font-medium text-lg"
+                                    onclick="getSelectButton(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                 <div class="card card-compact w-full bg-slate-800	 shadow-xl text-white text-center">
+                        <figure><img class="w-full" src="images/Rectangle 144 (3).png " alt="Vítor Machado" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-medium"> Vítor Machado</h2>
+                            <p>Goals 36 . Assist 120</p>
+                            <div class="card-actions justify-center">
+                                <button id="btn-machado" class="bg-blue-600 px-12 py-2 rounded font-medium text-lg"
+                                    onclick="getSelectButton(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                   </div>
+
+             
+
+               <div class="grid grid-row-3 gap-3">
+
+
+                 <div class="card card-compact w-full bg-slate-800	 shadow-xl text-white text-center">
+                        <figure><img class="w-full" src="images/Rectangle 144 (5).png" alt="ramos" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-medium">Sergio Ramos</h2>
+                            <p>Goals 36 . Assist 120</p>
+                            <div class="card-actions justify-center">
+                                <button id="btn-ramos" class="bg-blue-600 px-12 py-2 rounded font-medium text-lg"
+                                    onclick="getSelectButton(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="card card-compact w-full bg-slate-800	 shadow-xl text-white text-center">
+                        <figure><img class="w-full" src="images/Untitled-2.jpg" alt="Renaldo" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-medium"> Renaldo</h2>
+                            <p>Goals 36 . Assist 120</p>
+                            <div class="card-actions justify-center">
+                                <button id="btn-renaldo" class="bg-blue-600 px-12 py-2 rounded font-medium text-lg"
+                                    onclick="getSelectButton(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+             </div>
+                   
+
+
+                
+
+             <div class="ml-6 " >
+                
+                    <div class="mb-5 bg-black items-center text-white text-center">
+                        <h2 class="card-title  text-3xl ">Selected-<span id="total-selected-player">0</span></h2>
+                      
+                        <div class="overflow-mx-auto">
+                          <table class="table table-zebra  w-full" >
+                            <thead>
+                                <tr>
+                                    <td class="px-4 py-2">Number</td class="px-4 py-2">
+                                    <td class="px-4 py-2">Player Name</td class="px-4 py-2">
+                                </tr>
+                            </thead>
+                            
+                            <tbody class="text-light " id="name-place">
+                              
+                              <tr>
+                                
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                </div>
+
+                <!-- Calculate -->
+
+                <div class="bg-black p-3  ">
+                    <h1 class="text-2xl font-bold py-5">Budget</h1>
+                    <div class="flex flex-column">
+                        <h5 class="pe-2">Per Player:</h5>
+                        <input id="player-field" class="py-2 text-black" type="text" class="">
+                    </div>
+                    <button id="btn-calculate" class="md:text-2xl sm:text-1xl bg-sky-700 lg:w-52 md:w-44 font-semibold   py-2 my-5">Calculate</button>
+                    <h5 >Player Expenses    $<span id="expenses">0000</span></h5>
+                    <div class="flex flex-column py-4">
+                        <h5 class="pe-2">Manager:</h5>
+                        <input id="manager-field" class="py-2 text-black" type="text">
+                    </div>
+                    <div class="flex flex-column">
+                        <h5 class="pe-7">Coach:</h5>
+                        <input id="coach-field" class="py-2 text-black" type="text">
+                    </div>
+                    <button id="btn-calculate-total" class="md:text-2xl sm:text-1xl bg-sky-700 py-2 lg:w-52 md:w-44 font-semibold my-4">Calculate Total</button>
+                    <h5 class="py-3">Total     $<span id="final-total">0000</span></h5>
+                </div>
+
+               </div>
             </div>
-         </div>
+        </section>
    </main>
 
-   <footer>
-
+   <footer class="bg-black">
+   <h3 class="py-8 text-center text-white">Copyright @ 2022 All Rights Reserved.</h3>
    </footer>
     
-   <script src="js/world-cup.js"></script>
+   <script src="js/player.js"></script>
 </body>
 </html>
